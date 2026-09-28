@@ -1,19 +1,16 @@
-# 🎈 Blank app template
+# 🏷️ Promocalculator
 
-A simple Streamlit app template for you to modify!
+Calculadora de promociones y descuentos hecha con Streamlit.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+## Publicación (web pública)
 
-### How to run it on your own machine
+1. Entrá a https://share.streamlit.io e iniciá sesión con GitHub.
+2. **Create app** → repositorio `danilodeg/promocalculator`, rama `main`, archivo `streamlit_app.py`.
+3. **Deploy**. La app queda en una URL pública `https://<nombre>.streamlit.app`.
 
-1. Install the requirements
+## Ejecutar localmente
 
-   ```
-   $ pip install -r requirements.txt
-   ```
-
-2. Run the app
-
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+```
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```

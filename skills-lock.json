@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "indec-api": {
+      "source": "jonymusky/indec-api-skill",
+      "sourceType": "github",
+      "skillPath": "skills/indec-api/SKILL.md",
+      "computedHash": "f04af95a6d763f57a7ec7bc87f07b9fc80482b2af2c838882f35ef992d894ea8"
+    }
+  }
+}

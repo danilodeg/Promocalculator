@@ -17,3 +17,22 @@ A simple Streamlit app template for you to modify!
    ```
    $ streamlit run streamlit_app.py
    ```
+
+### Calculadora de inflación
+
+Actualiza un monto entre dos meses usando el IPC Nacional (nivel general) del INDEC:
+`monto × índice(hasta) / índice(desde)`.
+
+**Datos**: si existe `INDEC_TOKEN` (variable de entorno o `.streamlit/secrets.toml`,
+token generado en https://api.indec.gob.ar) consulta la API; si no, usa
+`data/ipc_nacional.csv` (columnas `periodo` AAAAMM e `indice`).
+Si la autodetección de región/indicador falla, fijalos en `secrets.toml`:
+
+```toml
+[INDEC_IPC_FILTERS]
+region = "..."
+tipo_de_indicador_descripcion = "..."
+descripcion = "..."
+```
+
+Tests: `python -m pytest`
